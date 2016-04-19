@@ -2,23 +2,37 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Golang Server</title>
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Golang Server</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico">
 </head>
 
 <body>
-  <div class="header-bar">
-    <h1>Welcome to my beautiful Golang Server!</h1>
-  </div>
-  <button class="button-connect pure-button" onclick="connect()">Connect</button>
-  <button class="button-disconnect pure-button" onclick="disconnect()">Disconnect</button>
+    <div class="header-bar">
+        <h1>My Golang Server!</h1>
+    </div>
 
+    <div class="pure-g main-body">
+        <!-- User list -->
+        <div class="user-list pure-u-1-5">
+            <h3>Connected Users</h3>
+            <ul class="users">
+                <!-- User li's -->
+            </ul>
+        </div>
 
-  <div class="response disconnected">Disconnected...</div>
+        <!-- Main game stage -->
+        <div class="stage pure-u-4-5">
+            <button class="my-btn button-connect pure-button" onclick="connect()">Connect</button>
+            <div class="response disconnected">Disconnected...</div>
+            <div class="message connected"></div>
+        </div>
+    </div>
 
-  <script src="main.js" charset="utf-8"></script>
+    <!-- main javascript -->
+    <script src="main.js" charset="utf-8"></script>
 </body>
 
 </html>
