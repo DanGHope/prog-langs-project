@@ -18,7 +18,7 @@ func main() {
 
 	//Print to console
 	fmt.Printf("Server Starting On Port: %d...\n", port)
-	//Start Server on "port"
+	//Start Server
   err := http.ListenAndServe(":5000",nil)
   if err != nil {
     log.Fatal("ListenAndServe: ",err)
