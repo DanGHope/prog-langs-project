@@ -2,8 +2,6 @@ Programming Languages - Final Project
 
 Documenting my experimentation with:
 
-Scala
-Akka
-Play
+GO
 
 As a back-end webserver
